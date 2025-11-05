@@ -1,9 +1,14 @@
 {
-  "name": "app-support",
+  "name": "@jroberts2005/app-support",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir dist --copy-files",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,15 @@
     "url": "https://github.com/JoshRobertsWeb/app-support/issues"
   },
   "homepage": "https://github.com/JoshRobertsWeb/app-support#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
 }
