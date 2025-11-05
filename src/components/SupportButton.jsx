@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ 
+const SupportButton = ({ 
   children, 
   onClick, 
   variant = 'primary',
@@ -62,4 +62,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default SupportButton;

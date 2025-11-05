@@ -1,1 +1,1 @@
-export { default as Button } from './components/SupportButton';
+export { default as SupportButton } from './components/SupportButton';

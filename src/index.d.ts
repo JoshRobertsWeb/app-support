@@ -10,5 +10,4 @@ export interface ButtonProps {
   [key: string]: any;
 }
 
-export const Button: React.FC<ButtonProps>;
-export { Button as SupportButton };
+export const SupportButton: React.FC<ButtonProps>;
